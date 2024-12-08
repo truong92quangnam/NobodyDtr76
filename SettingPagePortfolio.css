@@ -1,0 +1,34 @@
+.ID1
+{
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    background-color: #90e0ef;
+    top:100px;
+    padding-left: 10px;
+}
+
+.ID1 h1
+{
+    font-size: 50px;
+    margin-left: 10px;
+}
+
+li
+{
+    font-size: 45px;
+    margin-left: 20px;
+    line-height: 100px;
+}
+
+.ID2
+{
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.Title_Header
+{
+    padding-top: 15px;
+}

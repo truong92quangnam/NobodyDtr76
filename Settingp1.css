@@ -1,0 +1,68 @@
+*
+{
+    margin: 0;
+}
+/* html
+{
+    animation: fadeOut 3s forwards;
+} */
+body
+{
+    position: relative;
+}
+div
+{
+    display: box;
+    unicode-bidi: isolate;
+}
+.Header 
+{
+    display: flex;
+    width: 100vw;
+    height: 100px;
+    background-color: #7c98b3 ;
+    position:fixed ;
+    top:0;
+    left:0;
+    z-index: 1000;
+    
+}
+
+.Title_Header
+{
+    text-align: center;
+    width: 200px;
+    height: 30px;
+    position: relative;
+    padding-top: 35px;
+    font-weight: bold;
+    transition: transform 1s ease, opacity 1s ease;
+    transform: translateY(20px);
+}
+
+#Portfolio, #About_Me
+{
+    font-size: 30px;
+    left: 74%;
+}
+
+.Title_Header#Portfolio:hover, .Title_Header#About_Me:hover, #NobodyDtr76:hover
+{
+    cursor: pointer; 
+    text-decoration: underline;
+}
+#NobodyDtr76
+{
+    font-size: 30px;
+}   
+
+.fade-in {
+    opacity: 0;
+    transform: translateY(20px);
+}
+
+.Title_Header.visible {
+    opacity: 1; /* Hiển thị rõ */
+    transform: translateY(0); /* Quay về vị trí gốc */
+}
+

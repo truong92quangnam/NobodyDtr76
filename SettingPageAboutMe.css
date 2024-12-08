@@ -1,0 +1,44 @@
+.TheDataOfAboutMe
+{
+    background-color: rgb(124, 134, 143);
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    top:100px;
+    
+}
+.TheDataOfAboutMe #Paragraph
+{
+    margin: 10px;
+    padding-left: 20px;
+    font-size: 31px;
+    line-height: 50px;
+    position: absolute;
+    background-color: aliceblue;
+    width: 50vw;
+    height: 90vh;    
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.9);  
+}
+.Photo
+{
+    width: 700px;
+    height: 1050px;
+    overflow: hidden;
+    
+}
+.Photo #Photo1
+{
+    margin-top: 10px;
+    position: absolute;
+    width: 700px;
+    height: 1050px;
+    object-fit: contain;
+    left: 60%;
+    box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+   
+}
+.Title_Header
+{
+    padding-top: 15px;
+}

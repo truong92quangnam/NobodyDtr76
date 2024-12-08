@@ -1,0 +1,94 @@
+.Data
+{
+    width: 100vw;
+    height: 90.1vh ;
+    padding-top: 100px;
+    background: linear-gradient(45deg, #645151, #4e4e4e, #1f4449);
+    position: relative;
+    animation: gradient-animation 5s ease infinite;
+    background-size: 400% 400%;
+    transition: transform 1s ease, opacity 1s ease; /* Hiệu ứng mờ và di chuyển */
+    opacity: 0; /* Ẩn lúc đầu */
+    transform: translateY(20px); /* Dịch xuống lúc đầu */
+}
+
+@keyframes gradient-animation {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+#ins:hover, #face:hover
+{
+    filter: brightness(70%);
+}
+
+#ins, #face
+{
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background-image: url('image/instagram_2111463.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 50%;
+    top:90%;
+    left: 95%;
+    cursor: pointer; 
+    transition: filter 0.3s ease;
+}
+
+#face
+{
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background-image: url('image/2021_Facebook_icon.svg.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    border-radius: 100%;
+    top:90%;
+    left:90%;
+    cursor: pointer; 
+}
+
+.Data #Text1
+{
+    position: relative;
+    font-size: 100px;
+    top:150px;
+    left: 20px;
+}
+
+.Data #Text2
+{
+    position: relative;
+    font-size: 75px;
+    top:240px;
+    left: 20px;
+}
+
+.Data #Text1, #Text2
+{
+    font-weight: bold;
+    background: linear-gradient(280deg, #5fa8d3, #62b6cb,#0582ca);
+    -webkit-background-clip: text; 
+    -webkit-text-fill-color: transparent; 
+}
+
+
+.fade-in {
+    opacity: 0;
+    transform: translateY(20px);
+}
+
+.Data.visible {
+    opacity: 1; /* Hiển thị rõ */
+    transform: translateY(0); /* Quay về vị trí gốc */
+}

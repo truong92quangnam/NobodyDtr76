@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Giới thiệu bản thân của NobodyDtr76</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+        <link rel="icon" href="image\title_image.png" type="image/x-icon">
+        <link rel="stylesheet" href="Settingp1.css">
+        <link rel="stylesheet" href="Testingofsetp1.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
+    
+    </head>
+    <body>
+        <!-- Đây là phần tử duy nhất được tồn tại ở mọi điểm trên trang web -->
+        <div class="Header"> 
+            <div onclick="window.location.href='Page1.html'" style="cursor: pointer;" class="Title_Header  fade-in" id="NobodyDtr76">NobodyDtr76</div>
+            <div onclick="window.location.href='Page_Portfolio.html'" style="cursor: pointer;" class="Title_Header  fade-in" id="Portfolio">Portfolio</div>
+            <div onclick="window.location.href='PageAboutMe.html'" style="cursor: pointer;" class="Title_Header  fade-in" id="About_Me">About Me</div>
+        </div>
+
+        <div class="Data fade-in">
+            <h1 id="Text1">Xin chào,</h1>
+            <h1 id="Text2">Mình là Đinh Quốc Trường (NobodyDtr76) và đây là trang web giới thiệu bản thân của mình.</h1>
+            <h1 id="Text2">Thông tin chi tiết vui lòng bấm vào About Me hoặc Portfolio</h1>
+            <h1 class="Text3" id="Text2">Dưới đây là link facebook và instagram của mình</h1>
+            <div id="ins" onclick="window.open('https://www.instagram.com/nobodydtr76/', '_blank')"> </div>
+            <div id="face" onclick="window.open('https://www.facebook.com/Nobodydtr76/?locale=vi_VN', '_blank')"></div>
+        </div>
+
+        <script>
+            // Hàm thêm lớp "visible" để kích hoạt hiệu ứng
+            window.addEventListener("load", () => {
+                const fadeElements = document.querySelectorAll(".fade-in");
+                fadeElements.forEach((el, index) => {
+                    setTimeout(() => {
+                        el.classList.add("visible");
+                    }, index * 500); // Thêm độ trễ giữa các phần tử
+                });
+            });
+        </script>
+    </body>
+</html>
